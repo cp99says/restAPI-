@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input fot ML model</title>
+</head>
+<body>
+      <form method="post" action="/posts/mongo">
+        <input type="text" id="sym" class="sym" placeholder="symptoms" name="sym"><br>
+        <button type="submit">submit</button>
+    </form>
+    <script>
+        function start()
+        {
+          var a=document.getElementById('sym').value;
+          console.log(a)          
+        }
+        module.exports=start;
+    </script>
+    
+</body>
+</html>
